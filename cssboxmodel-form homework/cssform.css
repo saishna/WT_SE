@@ -1,0 +1,100 @@
+.container{
+    background-color:white;
+    height:85%;
+    width:28%;
+    margin:60 auto; 
+    border:1px solid black;
+    padding-left: 36px;
+    justify-content: center;
+    padding-top: 10px;
+    padding-right:16px;
+
+    
+    
+
+    
+}
+body{
+    background-color:rgb(255, 0, 102)
+}
+
+.under{
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 56, 99);
+}
+
+.name{
+    border:none;
+    border-bottom: 2px solid black;
+    width:90% 
+    
+   
+}
+.continue{
+    background: linear-gradient(to bottom, #800000 0%, #cc0000 100%);
+    width:90%;
+    padding:8px;
+    color:white;
+    border:none;
+
+    
+}
+
+.h1{
+    margin:-2px;
+    margin-bottom:20px;
+}
+
+.twitter{
+    background: skyblue;
+    width: 90%;
+    padding:8px;
+    margin-bottom: 20px;
+    color:white;
+    text-align: left;
+    padding-left:22px;
+    border:none;
+
+     
+
+}
+
+.facebook{
+    background: rgba(0, 0, 255, 0.74);
+    width: 90%;
+    padding:8px;
+    margin-bottom: 26px;
+    color:white;
+    text-align: left;
+    padding-left:22px;
+    border:none;
+    
+    
+}
+.h1{
+    padding-left: 44px;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
