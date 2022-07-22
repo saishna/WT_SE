@@ -1,0 +1,120 @@
+<html>
+
+<head>
+
+    <body>
+        <form method="get" action="#">
+            <div>
+                <label>Username*</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <br>
+            <div>
+                <label>Email*</label>
+                <input type="email" name="usermail" id="usermail">
+            </div>
+            <br>
+            <div>
+                <label>Phone*</label>
+                <input type="text" name="phone" id="phone">
+            </div>
+            <br>
+            <div>
+                <label>Password*</label>
+                <input type="password" name="userpass" id="userpass">
+            </div>
+            <br>
+            <div>
+                <label>Re-password*</label>
+                <input type="password" name="repassword" id="repassword">
+            </div>
+            <br>
+            <input type="submit" value="sign up" id="btn">
+        </form>
+        <script>
+            document.getElementById("username").onblur = validateUsername;
+
+            function validateUsername() {
+                var name = document.getElementById("username").value;
+                if (name == "") {
+                    alert("Username cannot be empty");
+                    return false;
+                } else {
+                    if (name.length >= 3 && name.length <= 10) {
+                        var pos = name.search(/^[a-zA-Z0-9]{3,10}$/);
+                        if (pos == -1) {
+                            alert("Invalid username");
+                            return false;
+                        } else {
+                            alert("Your name is valid.");
+                            return true;
+                        }
+                    } else {
+                        alert("Your name must contain 3-10 characters.");
+                        return false;
+                    }
+
+                }
+            }
+            document.getElementById("usermail").onblur = validatEmail;
+
+            function validatEmail() {
+                var email = document.getElementById("usermail").value;
+                if (email == "") {
+                    alert("Email cannot be empty");
+                    return false;
+                } else {
+                    var pos = email.search(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+                    if (pos == -1) {
+                        alert("Invalid email");
+                        return false;
+                    } else {
+                        alert("Your email is valid.");
+                        return true;
+                    }
+                }
+            }
+            document.getElementById("phone").onblur = validateNumber;
+
+            function validateNumber() {
+                var number = document.getElementById("phone").value;
+                if (number == "") {
+                    alert("Number cant be empty");
+                } else {
+                    if (number.length == 10) {
+                        var pos = number.search(/^(98\d{8})$/);
+                        if (pos == 0) {
+                            alert("Your number is valid");
+                        } else {
+                            alret("Enter valid phone number.");
+                        }
+                    } else {
+                        alert("Enter valid phone number");
+
+                    }
+                }
+            }
+
+            document.getElementById("repassword").onblur = validatePassword;
+
+            function validatePassword() {
+                var password = document.getElementById("userpass").value;
+                var re_password = document.getElementById("repassword").value;
+                if (password == "" || re_password == "" || password.length < 8) {
+                    alert("Password must contain atleast 8 character");
+                    return false;
+                } else {
+                    if (password !== re_password) {
+                        alert("Password do not match");
+                        return false;
+                    } else {
+                        alert("Password match");
+                        return true;
+                    }
+                }
+            }
+        </script>
+</head>
+</body>
+
+</html>

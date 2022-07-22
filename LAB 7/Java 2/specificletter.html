@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>
+        specific letter
+    </title>
+
+</head>
+
+<body>
+    <script>
+        var str = prompt("Enter the string", str);
+        /*var vowels = str.match(/[a]/g);
+        var count = vowels.length;
+        
+        */
+        var count = 0;
+        var check = prompt("Enter the lettet to be checked", check);
+        for (var i = 0; i < str.length; i++) {
+            if (str.charAt(i) == check) {
+                count++;
+            }
+        }
+        document.write("No.of occurence of ", check, " in ", str, " is ", count);
+    </script>
+</body>
+
+</html>

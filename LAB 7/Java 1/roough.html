@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>
+        array
+    </title>
+
+</head>
+
+<body>
+    <script>
+        var list;
+        list = prompt("Enter some names", list);
+        var listarr = list.split(",");
+        document.write(list, "</br>"); //
+        document.write(listarr[3], "</br>"); //
+        listarr.push("Ganesh");
+        document.write(listarr, "</br>"); //
+
+
+        listarr.unshift("Ganesh");
+        document.write(listarr, "</br>"); //
+
+        var last = listarr.pop();
+        document.write(last, "</br>"); //
+
+        var first = listarr.shift();
+        document.write(first, "</br>"); //
+
+        var rem = listarr.splice(0, 4);
+        document.write(listarr, "</br>");
+        //document.write(rem, "</br");
+        remm = listarr.splice(1, 0, "sabina", "kanxi");
+        document.write(listarr, "</br>");
+
+        document.write(listarr.join("-"), "</br>");
+        document.write(listarr.join(","));
+    </script>
+
+
+</body>
+
+</html>

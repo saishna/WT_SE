@@ -1,0 +1,24 @@
+<html>
+
+<head>
+
+    <title>innertext</title>
+
+</head>
+
+<body>
+
+    <p id="para"></p>
+    <script>
+        var str;
+        str = prompt("Enter the string", str);
+
+        var sl = str.slice(1, str.length - 1);
+        var rev = str.substr(1);
+        var up = str.charAt(0).toUpperCase() + sl + rev.charAt(0).toUpperCase();
+        document.getElementById("para").innerText = up;
+    </script>
+
+</body>
+
+</html>

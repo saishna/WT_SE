@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>
+        array
+    </title>
+
+</head>
+
+<body>
+    <script>
+        var list;
+        list = prompt("Enter some names", list);
+        var listarr1 = list.split(",");
+        document.write(listarr1, "</br>");
+
+        var listarr2 = listarr1.join(",");
+        document.write(listarr2, "</br>");
+
+        document.write("The length of array is</br>", listarr1.length, "</br>");
+
+        document.write("The last element of the array is<br>", listarr1[listarr1.length - 1], "</br>");
+
+        document.write("The first elements of the array is</br>", listarr1[0], "</br>");
+
+        //   document.write(listarr1.indexOf(listarr1[listarr1.length - 1]), "</br>");
+
+        document.write(listarr1.indexOf(listarr1[0]), "</br>");
+        document.write("The array elements afetr sorted is</br>", listarr1.sort(), "</br>");
+        document.write("The reverse of array is</br> ", listarr1.reverse(), "</br>");
+    </script>
+
+
+</body>
+
+</html>
